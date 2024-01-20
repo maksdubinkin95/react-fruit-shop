@@ -8,13 +8,41 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <!-- <link rel="stylesheet" href="/css/frame.css"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <title>React App</title>
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="page">
+    <header class="page__header page-header">
+      <div class="container">
+        <nav class="page-header__navigation main-navigation">
+          <img class="logo" src="/img/logo.png"></img>
+          <div class="main-navigation__descriptor">
+            <p class="main-navigation__title">Фрукты Бонифация</p>
+            <p class="main-navigation__description">Только спелые фрукты</p>
+          </div>
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <img src="/img/basket.svg"></img>
+              <a class="main-navigation__name">1205 руб.</a>
+            </li>
+            <li class="main-navigation__item">
+              <img src="/img/heart.svg"></img>
+              <a class="main-navigation__name">Закладки</a>
+            </li>
+            <li class="main-navigation__item">
+              <img src="/img/profile.svg"></img>
+              <a class="main-navigation__name">Профиль</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="root">
+
+    </div>
   </body>
 </html>
