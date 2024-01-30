@@ -1,0 +1,50 @@
+.cards {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .cards__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      .cards__header-title {
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+      }
+      .cards__header-search {
+        position: relative;
+        height: 45px;
+        width: 250px;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          transform: translate(0, -50%);
+          width: 15px;
+          height: 15px;
+
+          background: url("../../../public/img/search.svg") no-repeat;
+          background-size: cover;
+        }
+        .cards__header-input {
+          padding-left: 40px;
+          height: 100%;
+          width: 100%;
+          border: 1px solid #f3f3f3;
+          border-radius: 10px;
+          color: #797979;
+        }
+      }
+    }
+    .cards__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 40px;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+}
