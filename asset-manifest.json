@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-fruit-shop/static/css/main.3b195081.css",
+    "main.js": "/react-fruit-shop/static/js/main.39a60196.js",
+    "static/media/Inter-Bold.woff2": "/react-fruit-shop/static/media/Inter-Bold.ef4f1fa4544b2a5eaf2c.woff2",
+    "static/media/Inter-Regular.woff2": "/react-fruit-shop/static/media/Inter-Regular.ab945c53cca7263f39f9.woff2",
+    "index.html": "/react-fruit-shop/index.html",
+    "static/media/search.svg": "/react-fruit-shop/static/media/search.48c52bf5d459537e27c0.svg",
+    "main.3b195081.css.map": "/react-fruit-shop/static/css/main.3b195081.css.map",
+    "main.39a60196.js.map": "/react-fruit-shop/static/js/main.39a60196.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b195081.css",
+    "static/js/main.39a60196.js"
+  ]
+}
