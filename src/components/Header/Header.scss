@@ -1,149 +1,62 @@
-.basket-sidebar {
-  display: none;
-  transition: all 2s ease 0s;
-  &.active {
+@import "../../../styles/media";
+
+.header__logo-wrapper{
     display: flex;
-    width: 850px;
-    flex-direction: column;
-    position: fixed;
-    overflow: scroll;
-    right: 0;
-    width: 450px;
-    height: 100%;
-    padding: 30px;
-    background-color: white;
-    z-index: 10;
-  }
-  .card-sidebar__header {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
-  }
-
-  .basket-sidebar__title {
-    text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 700;
-    // line-height: 29px;
-  }
-  .basket-sidebar__list {
-    display: grid;
-    gap: 20px;
-    .card-sidebar {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      padding: 30px 20px;
-      border: 1px solid #f3f3f3;
-      border-radius: 40px;
-      cursor: pointer;
-      transition: all 0.5s ease 0s;
-      &:hover {
-        box-shadow: 0px 0px 13px 0px rgba(34, 60, 80, 0.2);
-        background-color: #f3f3f3;
-      }
-      .card-sidebar__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      .card-sidebar__name {
-        font-family: Inter;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
-        width: 80%;
-      }
-    }
-    .card-sidebar__img-fruit {
-      img {
-        width: 100%;
-      }
-    }
-    .card-sidebar__price {
-      display: flex;
-
-      justify-content: space-between;
-      align-items: center;
-    }
-    .card-sidebar__price-value {
-      font-family: Inter;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 17px;
-    }
-  }
-  .basket-sidebar__total,
-  .basket-sidebar__tax {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    column-gap: 10px;
-    margin-bottom: 20px;
-    span:nth-child(even) {
-      border-bottom: 1px dashed #dfdfdf;
-    }
-  }
-  .basket-sidebar__total {
-    margin-top: auto;
-  }
-  .basket-sidebar__button {
-    display: inline-block;
-    padding: 18px;
-    width: 100%;
-    height: 55px;
-    text-align: center;
-    border-radius: 18px;
-    line-height: 19px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #9dd458;
-    color: #ffffff;
-  }
 }
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px;
-  .main-navigation {
+.main-navigation {
     display: flex;
     align-items: center;
     padding: 30px 0;
     .logo {
-      width: 80px;
-      // height: 80px;
-      margin-right: 15px;
+        width: 80px;
+        // height: 80px;
+        margin-right: 15px;
     }
     .main-navigation__title {
-      font-family: "Inter";
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 24px;
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+    }
+    .main-navigation__descriptor{
+        @include mobile-low {
+            display: none;
+        }
     }
     .main-navigation__description {
-      font-family: Inter;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 17px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+
     }
     .main-navigation__list {
-      display: flex;
-      margin-left: auto;
-      .main-navigation__item {
         display: flex;
-        margin-right: 30px;
-        img {
-          margin-right: 10px;
+        margin-left: auto;
+        .main-navigation__item {
+            display: flex;
+            margin-right: 30px;
+            cursor: pointer;
+            a {
+                display: flex;
+            }
+            img {
+                margin-right: 10px;
+                @include mobile {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            .main-navigation__name {
+                text-wrap: nowrap;
+                @include mobile {
+                    display: none;
+                }
+            }
         }
-        .main-navigation__name {
-          text-wrap: nowrap;
+        .main-navigation__item:last-child {
+            margin-right: 0px;
         }
-      }
-      .main-navigation__item:last-child {
-        margin-right: 0px;
-      }
     }
-  }
 }

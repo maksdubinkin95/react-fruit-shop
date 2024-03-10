@@ -1,15 +1,29 @@
-.poster{
-    .container {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
+@import "../../../styles/media";
+.poster {
     margin-bottom: 30px;
-    .poster__img{
-      border-radius: 20%;
-      img{
-        width: 100%;
-        object-fit: fill;
-      }
+    &__title {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 5px;
+        
     }
-  }
+    &__description {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        color: rgb(78, 78, 78);
+    }
+    &__image {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        @include mobile {
+            height: 150px;
+        }
+    }
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

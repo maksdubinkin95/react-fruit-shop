@@ -1,0 +1,104 @@
+@import "../../../styles/media";
+.cards {
+    &__header {
+        margin-bottom: 30px;
+        & &-title {
+            font-weight: 700;
+            @include mobile-low {
+                margin-bottom: 20px;
+            }
+        }
+        &-search {
+            position: relative;
+            height: 45px;
+            width: 250px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translate(0, -50%);
+                width: 15px;
+                height: 15px;
+
+                background: url("../../../public/img/search.svg") no-repeat;
+                background-size: cover;
+            }
+        }
+        &-input {
+            padding-left: 40px;
+            padding-right: 40px;
+            height: 100%;
+            width: 100%;
+            border: var(--border);
+            border-radius: var(--border-radius-s);
+            color: var(--color-grey);
+        }
+        &-button {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @include mobile-low {
+            flex-direction: column;
+        }
+    }
+    &__header-search {
+        @include mobile-low {
+            width: 100%;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 341px ;
+        grid-gap: 25px;
+        justify-items: center;
+        @include desktop {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include mobile {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include mobile-low {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+.favorites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 250px;
+        border: var(--border);
+        background-color: #f4dada;
+        border-radius: 60px;
+    }
+    &__header {
+        margin-top: 20px;
+        color: rgb(0, 0, 0);
+    }
+    &__image {
+        display: block;
+        width: 70%;
+    }
+}
