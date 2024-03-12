@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-fruit-shop/static/css/main.5a65aa5e.css",
-    "main.js": "/react-fruit-shop/static/js/main.62521b74.js",
+    "main.js": "/react-fruit-shop/static/js/main.25324252.js",
     "static/media/fruitRainbow.png": "/react-fruit-shop/static/media/fruitRainbow.17bf3194136fabb93aca.png",
     "static/media/Inter-Bold.woff2": "/react-fruit-shop/static/media/Inter-Bold.ef4f1fa4544b2a5eaf2c.woff2",
     "static/media/Inter-Regular.woff2": "/react-fruit-shop/static/media/Inter-Regular.ab945c53cca7263f39f9.woff2",
@@ -10,10 +10,10 @@
     "index.html": "/react-fruit-shop/index.html",
     "static/media/search.svg": "/react-fruit-shop/static/media/search.48c52bf5d459537e27c0.svg",
     "main.5a65aa5e.css.map": "/react-fruit-shop/static/css/main.5a65aa5e.css.map",
-    "main.62521b74.js.map": "/react-fruit-shop/static/js/main.62521b74.js.map"
+    "main.25324252.js.map": "/react-fruit-shop/static/js/main.25324252.js.map"
   },
   "entrypoints": [
     "static/css/main.5a65aa5e.css",
-    "static/js/main.62521b74.js"
+    "static/js/main.25324252.js"
   ]
 }
