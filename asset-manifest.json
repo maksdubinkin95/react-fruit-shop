@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/react-fruit-shop/static/css/main.3b195081.css",
-    "main.js": "/react-fruit-shop/static/js/main.39a60196.js",
-    "static/media/Inter-Bold.woff2": "/react-fruit-shop/static/media/Inter-Bold.ef4f1fa4544b2a5eaf2c.woff2",
-    "static/media/Inter-Regular.woff2": "/react-fruit-shop/static/media/Inter-Regular.ab945c53cca7263f39f9.woff2",
-    "index.html": "/react-fruit-shop/index.html",
-    "static/media/search.svg": "/react-fruit-shop/static/media/search.48c52bf5d459537e27c0.svg",
-    "main.3b195081.css.map": "/react-fruit-shop/static/css/main.3b195081.css.map",
-    "main.39a60196.js.map": "/react-fruit-shop/static/js/main.39a60196.js.map"
+    "main.css": "/maksdubinkin95/react-fruit-shop/static/css/main.609a0856.css",
+    "main.js": "/maksdubinkin95/react-fruit-shop/static/js/main.79970e67.js",
+    "static/media/fruitRainbow.png": "/maksdubinkin95/react-fruit-shop/static/media/fruitRainbow.17bf3194136fabb93aca.png",
+    "static/media/Inter-Bold.woff2": "/maksdubinkin95/react-fruit-shop/static/media/Inter-Bold.ef4f1fa4544b2a5eaf2c.woff2",
+    "static/media/Inter-Regular.woff2": "/maksdubinkin95/react-fruit-shop/static/media/Inter-Regular.ab945c53cca7263f39f9.woff2",
+    "static/media/fruitRainbow-tablet.png": "/maksdubinkin95/react-fruit-shop/static/media/fruitRainbow-tablet.5624fae13e57a54c520d.png",
+    "static/media/fruitRainbow-mobile.png": "/maksdubinkin95/react-fruit-shop/static/media/fruitRainbow-mobile.e2afad118372d84da05f.png",
+    "index.html": "/maksdubinkin95/react-fruit-shop/index.html",
+    "static/media/search.svg": "/maksdubinkin95/react-fruit-shop/static/media/search.48c52bf5d459537e27c0.svg",
+    "main.609a0856.css.map": "/maksdubinkin95/react-fruit-shop/static/css/main.609a0856.css.map",
+    "main.79970e67.js.map": "/maksdubinkin95/react-fruit-shop/static/js/main.79970e67.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b195081.css",
-    "static/js/main.39a60196.js"
+    "static/css/main.609a0856.css",
+    "static/js/main.79970e67.js"
   ]
 }
