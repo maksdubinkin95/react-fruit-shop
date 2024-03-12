@@ -1,5 +1,6 @@
 import React from "react";
 import "./info.scss";
+import Button from "../Button/Button";
 
 const Info = ({ image, title, description, button, onClick }) => {
     return (
@@ -9,7 +10,7 @@ const Info = ({ image, title, description, button, onClick }) => {
             </div>
             <h2 className="info__title">{title}</h2>
             <p className="info__description">{description}</p>
-            <button className="info__button" onClick={onClick}>{button}</button>
+            <Button onClick={onClick} button={button}></Button>
         </div>
     );
 };

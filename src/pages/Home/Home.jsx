@@ -14,7 +14,6 @@ const Home = () => {
         } else {
             return filtredItems.map((fruit) => (
                 <Card
-                    className={"te"}
                     title={fruit.title}
                     description={fruit.description}
                     img={fruit.img}

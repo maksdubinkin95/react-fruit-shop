@@ -22,14 +22,17 @@ svg * {
 h1,h2,h3,h4 {
     color: var(--color-black);
 }
+h1 {
+    @include fluid-text(40, 25);
+}
 h2 {
-    @include fluid-text(40, 30);
+    @include fluid-text(30, 22);
 }
 h3 {
     @include fluid-text(24, 18);
   }
 h4 {
-    @include fluid-text(16, 14);
+    @include fluid-text(17, 15);
 }
 
 button {

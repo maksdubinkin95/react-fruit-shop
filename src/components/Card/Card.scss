@@ -1,6 +1,7 @@
 @import "../../../styles/media";
 .card {
     flex-grow: 1;
+    flex-shrink: 1;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -12,46 +13,117 @@
     @include tablet {
         padding: 20px 25px;
     }
-    &__svg-wrapper {
+    &:hover {
+        background-color: rgb(246, 246, 246);
+        box-shadow: var(--box-shadow);
+    }
+    &__button {
         position: relative;
-        width: 33.5px;
-        height: 33.5px;
-        border: var(--border);
+        cursor: pointer;
+        background-color: white;
         border-radius: var(--border-radius-s);
-        transition: all .5s ease-in 0s;
+        transition: background-image 1s ease-in 0s;
         svg {
             position: absolute;
             top: 50%;
-            height: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-
-        }
-        &:hover{
-            background-color: white;
-            cursor: pointer;
         }
     }
-    &__image-like,
-    &__image-plus {
-        position: relative;
-        border: var(--border);
-        border-radius: var(--border-radius-s);
+    .button-like {
         width: 33.5px;
         height: 33.5px;
+        transition: all .1s ease-in 0s;
+        @include hover {
+            background-color: #ff8585;
+        }
     }
-    &__image-cancel {
-        display: none;
+    .button-like--noactive {
+        position: relative;
+        width: 33.5px;
+        height: 33.5px;
+        border: var(--border);
+        border-radius: var(--border-radius-s);
+        cursor: pointer;
+        path {
+            fill: white;
+        }
+    }
+    .button-like--active {
+        position: relative;
+        width: 33.5px;
+        height: 33.5px;
+        background-color: #f0fef5;
+        border: var(--border);
+        border-radius: var(--border-radius-s);
+        cursor: pointer;
+        path {
+            fill: #ff8585;
+            stroke: #ff8585;
+        }
+    }
+
+    .button-added--active {
+        position: relative;
+        width: 33.5px;
+        height: 33.5px;
+        background-color: rgb(17, 185, 65);
+
+
+        border: var(--border);
+        border-radius: var(--border-radius-s);
+        cursor: pointer;
+        path {
+            fill: white;
+        }
+    }
+    .button-added--noactive {
+        position: relative;
+        width: 33.5px;
+        height: 33.5px;
+        border: var(--border);
+        border-radius: var(--border-radius-s);
+        cursor: pointer;
+    }
+    .button-added--active{
+        transition: all .2s ease-in 0s;
+        @include hover {
+            background-color: rgb(17, 185, 65);
+            svg path {
+                fill: white;
+            }
+        }
+    }
+    .button-added--noactive{
+        transition: all .2s ease-in 0s;
+        @include hover {
+        background-color: rgb(61, 61, 61);
+
+            svg path {
+                fill: white;
+            }
+        }
+    }
+    .button-added--cancel{
+        position: relative;
+        width: 33.5px;
+        height: 33.5px;
+        border: var(--border);
+        border-radius: var(--border-radius-s);
+        cursor: pointer;
+        @include hover {
+            background-color: #807f7f;
+            svg path {
+                fill: white;
+            }
+        }
+
     }
     &__image-fruit {
         max-width: 100%;
         margin-bottom: 15px;
         height: 45%;
         object-fit: contain;
-
-        // @include mobile {
-        //     margin: 0 auto;
-        //     width: 60%;
-        // }
     }
 
     &__title {
@@ -77,11 +149,6 @@
             font-size: 14px;
             font-weight: 700;
         }
-    }
-
-    &:hover {
-        box-shadow: var(--box-shadow);
-        background-color: var(--color-soft-grey);
     }
 }
 .card__skeleton {

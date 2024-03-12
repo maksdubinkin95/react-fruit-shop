@@ -3,6 +3,7 @@ import React from "react";
 import { AppContext } from "../../App";
 import Info from "../../components/Info/Info";
 import { Link } from "react-router-dom";
+import './Orders.scss'
 
 
 const Orders = () => {
@@ -26,10 +27,10 @@ const Orders = () => {
         ));
     };
     return (
-        <section className="cards">
+        <section className="orders">
             <div className="container">
                 <div className="cards__header">
-                    <h2 className="cards__header-title">Заказы</h2>
+                    <h2 className="cards__header-title">Покупки</h2>
                 </div>
                 {orders.length ? (
                     <>
@@ -37,7 +38,7 @@ const Orders = () => {
                     </>
                 ) : (
                     <Link to="/">
-                        <Info image="img/no-favorites.png" title="У вас не!" description="Добавьте фрукты к себе" button="Вернуться к фруктам"></Info>
+                        <Info image="img/other/no-favorites.png" title="У вас нет!" description="С" button="Вернуться к фруктам"></Info>
                     </Link>
                 )}
             </div>

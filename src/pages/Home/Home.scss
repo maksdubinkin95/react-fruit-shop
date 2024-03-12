@@ -1,5 +1,7 @@
 @import "../../../styles/media";
 .cards {
+    margin-bottom: 40px;
+
     &__header {
         margin-bottom: 30px;
         & &-title {
@@ -21,7 +23,7 @@
                 width: 15px;
                 height: 15px;
 
-                background: url("../../../public/img/search.svg") no-repeat;
+                background: url("../../../public/img/other/search.svg") no-repeat;
                 background-size: cover;
             }
         }
@@ -49,6 +51,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @include mobile-low {
             flex-direction: column;
         }

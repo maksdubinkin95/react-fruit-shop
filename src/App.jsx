@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Orders from "./pages/Orders/Orders";
 import Favorites from "./pages/Favorites/Favorites";
+import Footer from "./components/Footer/Footer";
 
 import Poster from "./components/Poster/Poster";
 import Header from "./components/Header/Header";
@@ -49,7 +50,6 @@ function App() {
     const addToFavorites = async (obj) => {
         try {
             setLoading(true);
-            console.log(loading, "loading стал true");
             if (favorites.find((item) => item.title === obj.title)) {
                 const response = await axios.get("https://65dc8989e7edadead7ec4a3e.mockapi.io/favorites");
                 const favoritesId = response.data.find((item) => item.title === obj.title).id;
@@ -77,7 +77,6 @@ function App() {
     };
 
     const addToCart = async (obj) => {
-
         try {
             setLoading(true);
             if (contentCart.find((item) => item.title === obj.title)) {
@@ -85,27 +84,28 @@ function App() {
                 const id = response.data.find((item) => item.title === obj.title).id;
                 await removeFromCart(id);
             } else {
+                setContentCart((prev) => [...prev, obj]);
                 const resp = await axios.post("https://65b278df9bfb12f6eafddb92.mockapi.io/cart", obj);
-                await setContentCart((prev) => [...prev, resp.data]);
+                await setContentCart((prev) => [...prev.filter((item) => item !== obj), resp.data]); 
             }
         } catch (error) {
             alert("Произошла ошибка c добавлением в корзину");
             console.error(error);
         } finally {
             setLoading(false);
+            return "ok";
         }
     };
 
     const removeFromCart = async (id) => {
         try {
-            await axios.delete(`https://65b278df9bfb12f6eafddb92.mockapi.io/cart/${id}`);
             setContentCart((prev) => prev.filter((item) => item.id !== id));
+            axios.delete(`https://65b278df9bfb12f6eafddb92.mockapi.io/cart/${id}`);
         } catch (error) {
             alert("Произошла ошибка c удалением из корзины");
             console.error(error);
         }
     };
-
 
     return (
         <>
@@ -124,7 +124,7 @@ function App() {
                         addToFavorites,
                         favorites,
                         isLoading,
-                        removeFromCart
+                        removeFromCart,
                     }}
                 >
                     <Header contentCart={contentCart} addToCart={addToCart} removeFromCart={removeFromCart} setContentCart={setContentCart}></Header>
@@ -134,6 +134,7 @@ function App() {
                         <Route path="/favorites" element={<Favorites></Favorites>}></Route>
                         <Route path="/orders" element={<Orders></Orders>}></Route>
                     </Routes>
+                    <Footer></Footer>
                 </AppContext.Provider>
             </BrowserRouter>
         </>

@@ -1,0 +1,10 @@
+.footer {
+    &__description,
+    &__date{
+        max-width: 550px;
+        padding: 20px;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--color-grey)
+    }
+}

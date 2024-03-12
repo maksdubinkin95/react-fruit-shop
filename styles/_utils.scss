@@ -2,7 +2,7 @@
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: var(--container-padding-x);
+  padding: 0 var(--container-padding-x);
 }
 
 .visually-hidden {

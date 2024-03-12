@@ -1,5 +1,4 @@
 import Card from "../../components/Card/Card";
-// import "./Favorites.scss";
 import React from "react";
 import { AppContext } from "../../App";
 import Info from "../../components/Info/Info";
@@ -30,7 +29,7 @@ const Favorites = () => {
         <section className="cards">
             <div className="container">
                 <div className="cards__header">
-                    <h2 className="cards__header-title">Любимые фрукты</h2>
+                    <h2 className="cards__header-title">Любимые фрукты Саймона</h2>
                 </div>
                 {favorites.length ? (
                     <>
@@ -38,7 +37,7 @@ const Favorites = () => {
                     </>
                 ) : (
                     <Link to="/">
-                        <Info image="img/no-favorites.png" title="У вас нет любимых фруктов!" description="Добавьте фрукты к себе" button="Вернуться к фруктам"></Info>
+                        <Info image="img/other/no-favorites.png" title="Выберите любимые фрукты Саймона" description="Нажмите на сердечко!" button="Вернуться к фруктам"></Info>
                     </Link>
                 )}
             </div>
