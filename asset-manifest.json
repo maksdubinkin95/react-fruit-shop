@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-fruit-shop/static/css/main.27d66e3b.css",
-    "main.js": "/react-fruit-shop/static/js/main.56805298.js",
+    "main.js": "/react-fruit-shop/static/js/main.fd36924a.js",
     "static/media/fruitRainbow.png": "/react-fruit-shop/static/media/fruitRainbow.17bf3194136fabb93aca.png",
     "static/media/Inter-Bold.woff2": "/react-fruit-shop/static/media/Inter-Bold.ef4f1fa4544b2a5eaf2c.woff2",
     "static/media/Inter-Regular.woff2": "/react-fruit-shop/static/media/Inter-Regular.ab945c53cca7263f39f9.woff2",
@@ -10,10 +10,10 @@
     "index.html": "/react-fruit-shop/index.html",
     "static/media/search.svg": "/react-fruit-shop/static/media/search.48c52bf5d459537e27c0.svg",
     "main.27d66e3b.css.map": "/react-fruit-shop/static/css/main.27d66e3b.css.map",
-    "main.56805298.js.map": "/react-fruit-shop/static/js/main.56805298.js.map"
+    "main.fd36924a.js.map": "/react-fruit-shop/static/js/main.fd36924a.js.map"
   },
   "entrypoints": [
     "static/css/main.27d66e3b.css",
-    "static/js/main.56805298.js"
+    "static/js/main.fd36924a.js"
   ]
 }
