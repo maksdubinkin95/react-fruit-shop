@@ -36,8 +36,8 @@ const Favorites = () => {
                         <ul className="cards__list">{renderItems()}</ul>
                     </>
                 ) : (
-                    <Link to="/">
-                        <Info image="img/other/no-favorites.png" title="Выберите любимые фрукты Саймона" description="Нажмите на сердечко!" button="Вернуться к фруктам"></Info>
+                    <Link to="../home">
+                        <Info image="img/other/no-favorites.png" title="Выберите любимые фрукты Саймона" description="Нажмите на сердечко!" button="Вернуться к фруктам" to="../home"></Info>
                     </Link>
                 )}
             </div>

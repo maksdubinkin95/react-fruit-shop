@@ -2,7 +2,7 @@
     "name": "react-fruit-shop",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://maksdubinkin95.github.io/react-fruit-shop/",
+    "homepage": "https://maksdubinkin95.github.io/react-fruit-shop",
     "dependencies": {
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",

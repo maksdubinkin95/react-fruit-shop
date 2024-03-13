@@ -86,7 +86,7 @@ function App() {
             } else {
                 setContentCart((prev) => [...prev, obj]);
                 const resp = await axios.post("https://65b278df9bfb12f6eafddb92.mockapi.io/cart", obj);
-                await setContentCart((prev) => [...prev.filter((item) => item !== obj), resp.data]); 
+                await setContentCart((prev) => [...prev.filter((item) => item !== obj), resp.data]);
             }
         } catch (error) {
             alert("Произошла ошибка c добавлением в корзину");
@@ -127,12 +127,14 @@ function App() {
                         removeFromCart,
                     }}
                 >
-                    <Header contentCart={contentCart} addToCart={addToCart} removeFromCart={removeFromCart} setContentCart={setContentCart}></Header>
-                    <Poster></Poster>
+                    {/* <Header contentCart={contentCart} addToCart={addToCart} removeFromCart={removeFromCart} setContentCart={setContentCart}></Header> */}
                     <Routes>
-                        <Route path="/" element={<Home></Home>}></Route>
-                        <Route path="/favorites" element={<Favorites></Favorites>}></Route>
-                        <Route path="/orders" element={<Orders></Orders>}></Route>
+                        <Route path="/react-fruit-shop" element={<Header contentCart={contentCart} addToCart={addToCart} removeFromCart={removeFromCart} setContentCart={setContentCart}></Header>}>
+                            <Route index element={<Home></Home>}></Route>
+                            <Route path="home" element={<Home></Home>}></Route>
+                            <Route path="favorites" element={<Favorites></Favorites>}></Route>
+                            <Route path="orders" element={<Orders></Orders>}></Route>
+                        </Route>
                     </Routes>
                     <Footer></Footer>
                 </AppContext.Provider>

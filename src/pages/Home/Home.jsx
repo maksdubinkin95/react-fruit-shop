@@ -3,6 +3,7 @@ import "./Home.scss";
 import React from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
+import Poster from "../../components/Poster/Poster";
 
 const Home = () => {
     const [searchValue, setSearchValue] = React.useState("");
@@ -31,6 +32,8 @@ const Home = () => {
         }
     };
     return (
+        <>
+        <Poster></Poster>
         <section className="cards">
             <div className="container">
                 <div className="cards__header">
@@ -44,7 +47,7 @@ const Home = () => {
                                     setSearchValue("");
                                 }}
                             >
-                                <img src="img/cancel.svg" alt="" />
+                                <img src="img/other/cancel.svg" alt="" />
                             </button>
                         </div>
                     </div>
@@ -52,6 +55,7 @@ const Home = () => {
                 <ul className="cards__list">{renderItems()}</ul>
             </div>
         </section>
+        </>
     );
 };
 

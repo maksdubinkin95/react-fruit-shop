@@ -86,7 +86,7 @@ const Sidebar = ({ setIsOpenSidebar, removeFromCart }) => {
                     onClick={setIsOpenSidebar}
                 ></Info>
             ) : (
-                <Info image="img/other/emptyCart.png" title="Корзина совсем пустая!" description="Добавьте фрукты, чтобы накормить Саймона" button="Вернуться назад" onClick={setIsOpenSidebar}></Info>
+                <Info image="img/other/emptyCart.png" title="Корзина совсем пустая!" description="Добавьте фрукты, чтобы накормить Саймона" button="Вернуться назад" onClick={setIsOpenSidebar} to="home"></Info>
             )}
         </div>
     );

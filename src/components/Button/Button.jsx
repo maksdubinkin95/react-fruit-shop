@@ -1,11 +1,14 @@
 import React from "react";
-import "./Button.scss"
+import "./Button.scss";
+import { Link } from "react-router-dom";
 
-const Button = ({button, onClick}) => {
+const Button = ({ button, onClick, to }) => {
     return (
-        <button class="button" onClick={onClick}>
-            {button}
-        </button>
+        <Link to={to}>
+            <button class="button" onClick={onClick}>
+                {button}
+            </button>
+        </Link>
     );
 };
 

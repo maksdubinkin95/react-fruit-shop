@@ -2,7 +2,7 @@ import React from "react";
 import "./info.scss";
 import Button from "../Button/Button";
 
-const Info = ({ image, title, description, button, onClick }) => {
+const Info = ({ image, title, description, button, onClick, to }) => {
     return (
         <div className="info">
             <div className="info__wrapper">
@@ -10,7 +10,7 @@ const Info = ({ image, title, description, button, onClick }) => {
             </div>
             <h2 className="info__title">{title}</h2>
             <p className="info__description">{description}</p>
-            <Button onClick={onClick} button={button}></Button>
+            <Button onClick={onClick} button={button} to={to}></Button>
         </div>
     );
 };

@@ -38,7 +38,7 @@ const Orders = () => {
                     </>
                 ) : (
                     <Link to="/">
-                        <Info image="img/other/no-favorites.png" title="У вас нет!" description="С" button="Вернуться к фруктам"></Info>
+                        <Info image="img/other/emptyOrder.png" title="У вас нет покупок!" description="Саймон сильно проголодался, купите что нибудь!" button="Вернуться к фруктам" to="../home"></Info>
                     </Link>
                 )}
             </div>
